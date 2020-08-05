@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><link rel=stylesheet href=/libs/bootstrap-4/css/bootstrap.min.css><title>Star Riders Turkiye</title><link href=/css/chunk-10db2a9a.84699b99.css rel=prefetch><link href=/css/chunk-b0266af8.e04d95e7.css rel=prefetch><link href=/css/chunk-f237c19c.3865e1df.css rel=prefetch><link href=/js/chunk-10db2a9a.d5aff92f.js rel=prefetch><link href=/js/chunk-b0266af8.77525953.js rel=prefetch><link href=/js/chunk-f237c19c.9a55f841.js rel=prefetch><link href=/css/app.a4e655f2.css rel=preload as=style><link href=/css/chunk-vendors.b57e4bfb.css rel=preload as=style><link href=/js/app.2d240ddf.js rel=preload as=script><link href=/js/chunk-vendors.9d7f3f37.js rel=preload as=script><link href=/css/chunk-vendors.b57e4bfb.css rel=stylesheet><link href=/css/app.a4e655f2.css rel=stylesheet></head><body><noscript><strong>We're sorry but srtr doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/jquery-3.3.1.js></script><script src=/libs/bootstrap-4/js/bootstrap.min.js></script><script>// 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '100%',
+          width: '100%',
+          videoId: 'wqQ8PRWq9oU',
+          controls: 0,
+          disablekb: 0,
+          fs: 0,
+          loop: 0,
+          modestbranding: 1,
+          playsinline: 1,
+          rel: 0,
+          showinfo: 0,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }</script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126617941-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126617941-2');
+</script>
+
+    
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+      try {
+        w.yaCounter50871620 = new Ya.Metrika2({
+          id: 50871620,
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true
+        });
+      } catch (e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript>
+  <div><img src="https://mc.yandex.ru/watch/50871620" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+    <script src=/js/chunk-vendors.9d7f3f37.js></script><script src=/js/app.2d240ddf.js></script></body></html>
